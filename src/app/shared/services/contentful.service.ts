@@ -4,10 +4,9 @@ import {
   ContentfulClientApi,
   createClient,
 } from 'contentful';
-import { from, Observable } from 'rxjs';
+import { from } from 'rxjs';
 import * as marked from 'marked';
 import { environment } from '../../../environments/environment';
-import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -16,9 +15,8 @@ import { HttpClient } from '@angular/common/http';
 export class ContentfulService {
 
   private clientApi: ContentfulClientApi;
-  products: any = [];
 
-  constructor(private http:HttpClient) {
+  constructor() {
     this.clientApi = createClient({
       space: environment.contentful.spaceId,
       accessToken: environment.contentful.token,
@@ -35,12 +33,6 @@ export class ContentfulService {
   
   markdownToHtml(md: string) {
     return marked(md);
-  }
-
-  getAllprojects():Observable<any>
-  {
-      return this.http.get("assets/data.json")
-
   }
 
 }
