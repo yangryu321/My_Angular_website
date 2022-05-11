@@ -1,4 +1,3 @@
-import { ContentfulService } from './shared/services/contentful.service';
 import { IconsModule } from './icons/icons.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -17,7 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,16 +31,14 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     FooterComponent,
     NotFoundComponent
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IconsModule,
     BrowserAnimationsModule,
-    HttpClientModule
   ],
-  providers: [ContentfulService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
