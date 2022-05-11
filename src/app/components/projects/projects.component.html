@@ -10,12 +10,12 @@
               </div>
               <div class="link-box">
                 <div *ngIf="item?.liveUrl" class="links">
-                  <a href="{{item?.liveUrl}}" aria-label="Live Url">
+                  <a href="{{item?.liveUrl}}" aria-label="Live Url" target="_blank">
                     <i-feather class="icon" name="external-link"></i-feather>
                   </a>
                 </div>
                 <div *ngIf="item?.gitUrl" class="links">
-                  <a href="{{item?.gitUrl}}" aria-label="GitHub Link">
+                  <a href="{{item?.gitUrl}}" aria-label="GitHub Link" target="_blank">
                     <i-feather class="icon" name="Github"></i-feather>
                   </a>
                 </div>
@@ -32,7 +32,7 @@
             <footer class="p-footer">
               <div class="project-tech-list">
                 <ul class="tech-list">
-                  <li *ngFor="let tech of item?.tech">{{tech}}</li>
+                  <li *ngFor="let tool of item?.tools">{{tool}}</li>
                 </ul>
               </div>
             </footer>
