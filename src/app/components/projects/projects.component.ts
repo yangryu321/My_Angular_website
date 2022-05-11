@@ -13,11 +13,15 @@ import { Observable } from 'rxjs';
 export class ProjectsComponent implements OnInit {
 
   projects$: Observable<any>;
+  haha:any;
 
   constructor(private contentfulApiService: ContentfulService) { }
 
   ngOnInit() { 
-    this.projects$ = this.contentfulApiService.getDetails('projects');
+    // this.projects$ = this.contentfulApiService.getDetails('projects');
+    this.projects$ = this.contentfulApiService.getAllprojects();
+    this.haha = "haah";
+    console.log(this.projects$);
   }
 
 }
