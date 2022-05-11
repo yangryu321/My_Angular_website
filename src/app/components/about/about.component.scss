@@ -26,15 +26,7 @@ $imgFillColor: var(--img-fill-color);
   height: 100%;
 }
 
-.profile-pic {
-  background: url("../../../assets/images/haseeb.webp");
-  background-position: 100% 40%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: auto;
-  border-radius: 50%;
-  border: 2px solid $secTextColor;
-}
+
 
 .profile-pic::after {
   content: "";

@@ -1,12 +1,12 @@
 <section id="about" class="about-user">
-  <h2 class="title-heading">My Introduction</h2>
-  <div class="user__info">
-    <div class="user__pic">
+  <h2 class="title-heading">About me</h2>
+  <div>
+    <!-- <div class="user__pic">
       <div id="pic-boundary">
         <div class="profile-pic"></div>
       </div>
-    </div>
-    <div class="user-desc">
+    </div> -->
+    <div >
         <div *ngFor="let item of about$ | async">
           <div [innerHTML]="item?.desc | mdToHtml"></div>
         </div>

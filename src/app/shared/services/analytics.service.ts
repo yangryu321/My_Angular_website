@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 
 
-
 declare var createAnalytics: (analyticsTrackingId: string) => void;
 
 
