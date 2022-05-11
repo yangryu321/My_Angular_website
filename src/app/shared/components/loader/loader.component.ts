@@ -23,7 +23,7 @@ export class LoaderComponent implements OnInit, AfterViewInit {
 
     anime({
       targets: '#loader path',
-      fill: '#00FFB3',
+      fill: '#000000',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutQuart',
       duration: 1500,
